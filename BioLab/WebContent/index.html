@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<title>BioLab</title>
+
+</head>
+
+<body>
+
+	<!-- NAVBAR-->
+	<div class="navbar-wrapper">
+		<div class="container">
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse" data-target="#navbar"
+							aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">BioLab</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html"><img
+									src="images/home.png" alt="Home"></a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="ourproject.html">Our Project</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li class="dropdown"><a href="services.html"
+								class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">CBB_DB<span
+									class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+								</ul>
+							<li id="log"><a class="log" href="#" data-toggle="modal"
+								data-target="#login-modal"><img src="images/log1.png"
+									width="13px"> Login</a></li>
+							<li id="sign"><a href="#" data-toggle="modal"
+								data-target="#sign-up">Sign up</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- NAVBAR-->
+
+	<!-- Carousel-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel"
+		data-interval="3000">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img class="first-slide" src="images/slide-1.jpg" width="1200"
+					height="400" alt="First slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>BioLab</h1>
+						<p>
+							<a class="btn btn-lg btn-primary" href="#" data-toggle="modal"
+								data-target="#sign-up" role="button">Sign up today</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="second-slide" src="images/slide-2.jpg" width="1200"
+					height="400" alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>BioLab</h1>
+						<p>
+							<a class="btn btn-lg btn-primary" href="#" data-toggle="modal"
+								data-target="#sign-up" role="button">Sign up today</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="third-slide" src="images/slide-3.jpg" width="1200"
+					height="400" alt="Third slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>BioLab</h1>
+						<p>
+							<a class="btn btn-lg btn-primary" href="#" data-toggle="modal"
+								data-target="#sign-up" role="button">Sign up today</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button"
+			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+			aria-hidden="true"></span> <span class="sr-only">Previous</span>
+		</a> <a class="right carousel-control" href="#myCarousel" role="button"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- carousel -->
+
+	<!-- CONTAINER BOX -->
+	<div class="container">
+		<div class="col-md-6 col-sm-12">
+			<div class="contain">
+				<img src="images/icon-2.png" alt="">
+				<h2 class="text-center">Research</h2>
+				<p>Laborum et dolorum fuga harum quidem rerum facilis et
+					expedita distinctio nam libero tempore.</p>
+				<a href="" class="button">Learn more</a>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="contain">
+				<img src="images/icon-1.png" alt="">
+				<h2 class="text-center">Energy</h2>
+				<p>Laborum et dolorum fuga harum quidem rerum facilis et
+					expedita distinctio nam libero tempore.</p>
+				<a href="" class="button">Learn more</a>
+			</div>
+		</div>
+	</div>
+	<!-- CONTAINER BOX -->
+
+	<!-- LOGIN -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<div class="text-right">
+					<a href="#" data-toggle="modal" data-target="#login-modal"><img
+						src="images/X.ico" width="20px"></a>
+				</div>
+				<h1>Login to Your Account</h1>
+				<br>
+				<form>
+					<input type="text" name="user" placeholder="Username"> <input
+						type="password" name="pass" placeholder="Password"> <input
+						type="submit" name="login" class="login loginmodal-submit"
+						value="Login">
+				</form>
+				<div class="login-help">
+					<a href="#" data-toggle="modal" data-target="#sign-up">Register</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LOGIN -->
+
+	<!-- SIGN UP USER -->
+	<div class="modal fade" id="sign-up" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<div class="text-right">
+					<a href="#" data-toggle="modal" data-target="#sign-up"><img
+						src="images/X.ico" width="20px"></a>
+				</div>
+				<h1>Create Account</h1>
+				<br>
+				<form action="RegisterIndividual" method="post" name="index">
+					<div>
+						<label><input type="checkbox" name="colorCheckbox"
+							value="red"> Are you a doctor?</label>
+					</div>
+					<label class="red box">Your ID</label> <input class="red box"
+						type="text" name="iid" placeholder="Doctor's ID" required>
+					<label for="iname">Your Name</label> <input type="text"
+						name="iname" placeholder="Your Name" required> <label
+						for="isurname">Your Surname</label> <input type="text"
+						name="isurname" placeholder="Your Surname" required> <label
+						for="iemail">Your Email</label> <input type="email" name="iemail"
+						placeholder="Your Email" required> <label for="iuser">Username</label>
+					<input type="text" name="iuser" placeholder="Username" required>
+					<label for="ipass">Password</label> <input type="password"
+						name="ipass" placeholder="Password"> <label for="iconfirm">Confirm
+						Password</label> <input type="password" name="iconfirm"
+						placeholder="Password" required> <input type="submit"
+						name="isign" class="login loginmodal-submit" value="Sign up">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- SIGN UP USER -->
+
+	<!-- SCRIPTS -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/new.js"></script>
+	<!-- SCRIPTS -->
+
+</body>
+
+<!-- FOOTER -->
+<footer class="panel-footer text-center">
+	<p>&copy Copyright: BioDevelopers</p>
+</footer>
+<!-- FOOTER -->
+
+</html>

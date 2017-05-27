@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet" >
+	<title>BioLab</title>
+</head>
+
+<body>
+
+	<!-- NAVBAR-->
+	<div class="navbar-wrapper">
+		<div class="container">
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">BioLab</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><img src="images/home.png" alt="Home"></a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="active"><a href="ourproject.html">Our Project</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li class="dropdown">
+								<a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CBB_DB<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+								</ul>
+							<li id="log"><a class="log" href="#" data-toggle="modal"
+								data-target="#login-modal"><img src="images/log1.png"
+									width="13px"> Login</a></li>
+							<li id="sign"><a href="#" data-toggle="modal"
+								data-target="#sign-up">Sign up</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div><!-- NAVBAR-->
+
+	<br><br><br><br><br><br>
+
+	<!-- IMAGE -->
+	<div class="row">
+		<div class="col-md-12 padding-0">
+			<img class="img-responsive img-center" src="images/p.jpeg" alt="" width="full" height="150" />
+		</div>    
+	</div> <!-- IMAGE -->
+	
+	<br><br>
+
+	<!-- CONTAINER TEXTS -->
+	<div class="container-fluid">
+		<div class="col-md-12 col-sm-12 ">
+			<h2>Our Projects</h2>
+			<p>Lorem ipsum dolor sit amet, vim meis audiam ei, at velit nominavi petentium sit. Tation rationibus ea has. Posse ullum mei et, et sit ubique graeci. Sea verear intellegam no, ex per porro nihil nullam, ad per munere mollis noluisse. Agam epicuri perpetua at pri, nec suscipit appellantur cu. Vim in assum accumsan. Placerat percipit invenire vel et, quo ut diceret scribentur.</p>
+			<p>Pri eu everti oblique, offendit prodesset ullamcorper pri eu. Sea enim reque no, quod ipsum ea nam. An vero quas honestatis nec, suas iudico eripuit ne pro. Cum ex tibique copiosae perfecto, decore scripta delectus pro in, no consulatu definitiones vix. Facer argumentum omittantur duo no. Qui cu vitae ubique dictas, agam lucilius cu sed, ei maiestatis adolescens percipitur pri.</p>
+			<p>Duis nostrum praesent ei qui, his ne oporteat assentior. An amet scaevola nec. Dicam eripuit ut vim, eam ne mutat utroque, affert incorrupte te est. Ad quas laboramus democritum sed, dicit consul eos id. Per populo gloriatur ea.</p>
+		</div>
+	</div><!-- CONTAINER TEXTS -->
+
+	<br><br>
+
+	<!-- CONTAINER BOX -->
+	<div class="container-fluid">
+		<h2 class="text-center">Our Vision</h2>
+		<div class="col-md-4 col-sm-8">
+
+			<div class="contain">
+				<img src="images/icon-1.png" alt="icon">
+				<h3 class="text-center"><dfn>Vision 1</dfn></h3>
+				<p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-8">
+			<div class="contain">
+				<img src="images/icon-2.png" alt="icon">
+				<h3 class="text-center"><dfn>Vision 2</dfn></h3>
+				<p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-8">
+			<div class="contain">
+				<img src="images/icon-3.png" alt="icon">
+				<h3 class="text-center"><dfn>Vision 3</dfn></h3>
+				<p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+			</div>
+		</div>
+	</div><!-- CONTAINER BOX -->
+
+	<!-- LOGIN -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<div class="text-right">
+					<a href="#" data-toggle="modal" data-target="#login-modal"><img
+						src="images/X.ico" width="20px"></a>
+				</div>
+				<h1>Login to Your Account</h1>
+				<br>
+				<form>
+					<input type="text" name="user" placeholder="Username"> <input
+						type="password" name="pass" placeholder="Password"> <input
+						type="submit" name="login" class="login loginmodal-submit"
+						value="Login">
+				</form>
+				<div class="login-help">
+					<a href="#" data-toggle="modal" data-target="#sign-up">Register</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LOGIN -->
+
+	<!-- SIGN UP USER -->
+	<div class="modal fade" id="sign-up" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<div class="text-right">
+					<a href="#" data-toggle="modal" data-target="#sign-up"><img
+						src="images/X.ico" width="20px"></a>
+				</div>
+				<h1>Create Account</h1>
+				<br>
+				<form action="RegisterIndividual" method="post" name="index">
+					<div>
+						<label><input type="checkbox" name="colorCheckbox"
+							value="red"> Are you a doctor?</label>
+					</div>
+					<label class="red box">Your ID</label> <input class="red box"
+						type="text" name="iid" placeholder="Doctor's ID" required>
+					<label for="iname">Your Name</label> <input type="text"
+						name="iname" placeholder="Your Name" required> <label
+						for="isurname">Your Surname</label> <input type="text"
+						name="isurname" placeholder="Your Surname" required> <label
+						for="iemail">Your Email</label> <input type="email" name="iemail"
+						placeholder="Your Email" required> <label for="iuser">Username</label>
+					<input type="text" name="iuser" placeholder="Username" required>
+					<label for="ipass">Password</label> <input type="password"
+						name="ipass" placeholder="Password"> <label for="iconfirm">Confirm
+						Password</label> <input type="password" name="iconfirm"
+						placeholder="Password" required> <input type="submit"
+						name="isign" class="login loginmodal-submit" value="Sign up">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- SIGN UP USER -->
+
+	<!-- SCRIPTS -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/new.js"></script>
+	<!-- SCRIPTS -->
+	
+</body>
+
+<!-- FOOTER -->
+<footer class="panel-footer text-center">
+	<p>&copy Copyright: BioDevelopers</p>
+</footer><!-- FOOTER -->
+
+</html>
