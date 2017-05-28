@@ -139,34 +139,31 @@
 	</div>
 	<!-- CONTAINER BOX -->
 
-	<!-- LOGIN -->
-	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel" aria-hidden="true"
-		style="display: none;">
+		<!-- LOGIN -->
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
 		<div class="modal-dialog">
 			<div class="loginmodal-container">
 				<div class="text-right">
 					<a href="#" data-toggle="modal" data-target="#login-modal"><img
 						src="images/X.ico" width="20px"></a>
-				</div>
-				<h1>Login to Your Account</h1>
-				<br>
-				<form>
-					<input type="text" name="user" placeholder="Username"> <input
-						type="password" name="pass" placeholder="Password"> <input
+					</div>
+					<h1>Login to Your Account</h1>
+					<br>
+					<form>
+						<input type="text" name="username" placeholder="Username or Email" required> <input
+						type="password" name="password" placeholder="Password" required> <input
 						type="submit" name="login" class="login loginmodal-submit"
 						value="Login">
-				</form>
-				<div class="login-help">
-					<a href="#" data-toggle="modal" data-target="#sign-up">Register</a>
+					</form>
+					<div class="login-help">
+						<a href="#" data-toggle="modal" data-target="#sign-up">Register</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- LOGIN -->
+		</div> <!-- LOGIN -->
 
-	<!-- SIGN UP USER -->
-	<div class="modal fade" id="sign-up" tabindex="-1" role="dialog"
+		<!-- SIGN UP USER -->
+		<div class="modal fade" id="sign-up" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true"
 		style="display: none;">
 		<div class="modal-dialog">
@@ -174,33 +171,31 @@
 				<div class="text-right">
 					<a href="#" data-toggle="modal" data-target="#sign-up"><img
 						src="images/X.ico" width="20px"></a>
-				</div>
-				<h1>Create Account</h1>
-				<br>
-				<form action="RegisterIndividual" method="post" name="index">
-					<div>
-						<label><input type="checkbox" name="colorCheckbox"
-							value="red"> Are you a doctor?</label>
 					</div>
-					<label class="red box">Your ID</label> <input class="red box"
-						type="text" name="iid" placeholder="Doctor's ID" required>
-					<label for="iname">Your Name</label> <input type="text"
-						name="iname" placeholder="Your Name" required> <label
-						for="isurname">Your Surname</label> <input type="text"
-						name="isurname" placeholder="Your Surname" required> <label
-						for="iemail">Your Email</label> <input type="email" name="iemail"
-						placeholder="Your Email" required> <label for="iuser">Username</label>
-					<input type="text" name="iuser" placeholder="Username" required>
-					<label for="ipass">Password</label> <input type="password"
-						name="ipass" placeholder="Password"> <label for="iconfirm">Confirm
-						Password</label> <input type="password" name="iconfirm"
-						placeholder="Password" required> <input type="submit"
-						name="isign" class="login loginmodal-submit" value="Sign up">
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- SIGN UP USER -->
+					<h1>Create Account</h1>
+					<br>
+					<form action="RegisterIndividual" method="post" name="index">
+						<div>
+							<label><input type="checkbox" name="colorCheckbox"
+								value="red"> Are you a doctor?</label>
+							</div>
+							<label class="red box">Doctor's Credential</label> <input class="red box"
+							type="text" name="credential" placeholder="Credential" required>
+							<label for="name">Your Name</label> <input type="text" name="name" placeholder="Your Name" required> <label
+							for="surname">Your Surname</label> <input type="text"
+							name="surname" placeholder="Your Surname" required> <label
+							for="email">Your Email</label> <input type="email" name="email"
+							placeholder="Your Email" required> <label for="username">Username</label>
+							<input type="text" name="username" placeholder="Username" required>
+							<label for="password">Password</label> <input type="password"
+							name="password" placeholder="Password"> <label for="confirm">Confirm
+							Password</label> <input type="password" name="confirm"
+							placeholder="Password" required> <input type="submit"
+							name="sign" class="login loginmodal-submit" value="Sign up">
+						</form>
+					</div>
+				</div>
+			</div><!-- SIGN UP USER -->
 
 	<!-- SCRIPTS -->
 	<script
