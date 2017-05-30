@@ -72,15 +72,15 @@ public class DoctorDAO extends UserDAO{
 		DB db = new DB();
 		Connection con = null;
 		PreparedStatement st = null;
-		String sqlq = "Insert into bootcamp.doctor(doc_credential,username) values(?,?);"; //leipei to onoma tis basis
+		String sqlq = "Insert into doctor(username,doc_credential) values(?,?);"; //leipei to onoma tis basis
 		
 		try{
 			
 			db.open();
 			con=db.getConnection();
 			st=con.prepareStatement(sqlq);
-			st.setInt(1, doctor.getCredential());
-			st.setString(2, doctor.getUsername());
+			st.setInt(2, doctor.getCredential());
+			st.setString(1, doctor.getUsername());
 			st.executeUpdate();
 			st.close();
 			db.close();
